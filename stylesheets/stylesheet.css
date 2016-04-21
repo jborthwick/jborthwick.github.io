@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #606c71; }
 
 a {
@@ -114,7 +114,8 @@ a {
   font-weight: normal;
   color: #159957; }
 .main-content p {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  font-weight: 300; }
 .main-content code {
   padding: 2px 4px;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -208,7 +209,7 @@ a {
     max-width: 64rem;
     padding: 6rem 3rem 2rem;
     margin: 0 auto;
-    font-size: 1.1rem; } }
+    font-size: 1.2rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .main-content {
