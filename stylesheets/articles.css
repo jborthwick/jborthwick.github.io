@@ -62,7 +62,7 @@ article.text {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    padding: 3rem 0 2rem;
+    padding: 3rem 0 1.4rem;
     font-family: helvetica, arial, sans-serif;
     font-weight: 100;
     font-size: 28px; }
@@ -96,7 +96,7 @@ article.text {
     }
 
   article.text div.article-img-large.long {
-    margin: 0 -15%; }
+    margin: 0 -10%; }
 
   article.text div.article-img-large img {
     max-width: 100%;
