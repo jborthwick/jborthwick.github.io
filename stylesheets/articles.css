@@ -1,12 +1,14 @@
 body {
   font-family: merriweather, georgia, serif;
   line-height: 1.8;
-  background: #fafafa; }
+  background: #fafafa;
+  margin: 0;
+  padding: 0; }
 
 nav {
   width: 100%;
   background: rgba(255,255,255,0.98);
-  padding: 1rem;
+  padding: 1rem 0;
   text-align: center;
   // position: fixed;
   // -webkit-backdrop-filter: blur(10px);
@@ -30,10 +32,6 @@ nav {
 
 section.content {
   }
-
-img.banner {
-  width:100%;
-  max-width:100%; }
 
 article.text {
   margin: 0 auto;
@@ -93,6 +91,10 @@ article.text {
       article.text div.article-img-large img {
         border-radius: initial !important; }
 
+      article.text {
+        font-size: 16px;
+      }
+
     }
 
   article.text div.article-img-large.long {
@@ -107,7 +109,11 @@ footer {
   text-align: center;
   color: #ccc; }
 
-img {
-  margin: 0;
-  padding: 0;
+section.bottom-banner {
+  width: 100%;
 }
+
+section.bottom-banner img.banner {
+  width:100%;
+  max-width:100%;
+  margin-bottom: -10px; }
