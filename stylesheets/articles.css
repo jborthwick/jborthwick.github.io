@@ -40,7 +40,9 @@ nav {
       margin-right: 0; }
 
     nav a:hover {
-      color: #666; }
+      color: #666;
+      font-weight: 700;
+    }
 
 
 section.content {
