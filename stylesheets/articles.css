@@ -98,6 +98,12 @@ article.text {
     font-weight: 100;
     font-size: 28px; }
 
+  article.text h4 {
+    font-weight: 700;
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 0; }
+
   article.text h5 {
     letter-spacing: 0.1rem;
     font-size: 12px;
