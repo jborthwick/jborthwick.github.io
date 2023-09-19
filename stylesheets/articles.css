@@ -85,7 +85,7 @@ article.text {
   article.text h2 {
     font-style: italic;
     font-weight: 100;
-    color: #ccc;
+    color: #aaa;
     margin-top: 0;
     font-size: 22px; }
 
@@ -115,6 +115,13 @@ article.text {
     border-radius: 5px;
     padding-left: 3px;
     background: #FDECA4; }
+
+  #subnav {
+    font-size: 18px;
+    color: #ccc; }
+
+    #subnav a {
+      color: #aaa; }
 
   article.text div.article-img-large img {
     max-width: 100%;
