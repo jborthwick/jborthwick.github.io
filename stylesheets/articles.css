@@ -25,6 +25,10 @@ nav {
       width: 60rem;
     }
 
+    nav section#nav-container.casestudy {
+      width: 100%;
+    }
+
   }
 
   nav a {
