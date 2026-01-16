@@ -200,3 +200,57 @@ section.bottom-banner img.banner {
   width:100%;
   max-width:100%;
   margin-bottom: -10px; }
+
+/* Dark mode - respects system preferences */
+@media (prefers-color-scheme: dark) {
+
+  body {
+    background: #1a1a1a;
+  }
+
+  nav {
+    background: rgba(26, 26, 26, 0.90);
+  }
+
+  nav a {
+    color: #888;
+  }
+
+  nav a:hover {
+    color: #ccc;
+  }
+
+  article.text {
+    color: #e0e0e0;
+  }
+
+  article.text a {
+    color: #fff;
+  }
+
+  article.text h2 {
+    color: #777;
+  }
+
+  article.text h4 {
+    color: #e0e0e0;
+  }
+
+  article.text span.highlight {
+    background: #5c4a00;
+    color: #fff;
+  }
+
+  #subnav {
+    color: #555;
+  }
+
+  #subnav a {
+    color: #777;
+  }
+
+  footer {
+    color: #555;
+  }
+
+}
