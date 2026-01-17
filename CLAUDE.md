@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Personal portfolio website for Jeremy Borthwick, a product designer based in Boston. Showcases UI/UX work for clients including Ten Percent Happier, Mapkin, MapQuest, Harvard Magazine, MINI, CS Monitor, Kill Screen, Franciscan, and Saucony.
+Personal portfolio website for Jeremy Borthwick, a product designer based in Boston. Showcases UI/UX work for clients including Medium, Meta, Ten Percent Happier, Mapkin, MapQuest, Harvard Magazine, MINI, CS Monitor, Kill Screen, Franciscan, and Saucony.
 
 ## Tech Stack
 
@@ -43,12 +43,20 @@ bundle install
 bundle exec jekyll serve
 ```
 
+## Features
+
+- **Dark mode** - Automatically respects system preferences via `prefers-color-scheme: dark`
+- **Smooth scroll** - CSS `scroll-behavior: smooth` for nav link animations
+- **Active nav highlighting** - JavaScript tracks scroll position and highlights current section
+- **SEO meta tags** - Open Graph and Twitter Card tags for social sharing
+- **Accessibility** - All images have descriptive alt attributes
+
 ## Style Conventions
 
 - Use `<span class="highlight">` for emphasized text within paragraphs
 - Images use `article-img-large` class, with optional `series` or `long` modifiers
-- Navigation links use anchor IDs (`#tenpercent`, `#mapkin`, etc.)
-- Keep image filenames descriptive (e.g., `sqsphero_tph_1@2x.jpg`)
+- Navigation links use anchor IDs (`#medium`, `#meta`, `#tenpercent`, etc.)
+- Keep image filenames descriptive (e.g., `sqsphero_tph_1@2x.jpg`, `medium_tk_hero.jpg`)
 
 ## Content Updates
 
