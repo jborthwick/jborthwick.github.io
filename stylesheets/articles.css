@@ -52,6 +52,11 @@ nav {
       font-weight: 700;
     }
 
+    nav a.active {
+      color: #333;
+      font-weight: 700;
+    }
+
 
 section.content {
   }
@@ -222,6 +227,10 @@ section.bottom-banner img.banner {
 
   nav a:hover {
     color: #ccc;
+  }
+
+  nav a.active {
+    color: #fff;
   }
 
   article.text {

@@ -343,5 +343,54 @@
     <img src="images/mal_and_me.jpg" class="banner" alt="Jeremy with his dog">
   </section>
 
+  <script>
+    // Highlight active nav link based on scroll position
+    const sections = document.querySelectorAll('h3[id]');
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+    function setActiveLink(id) {
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + id) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    // Handle click - immediately highlight clicked link
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        const id = link.getAttribute('href').substring(1);
+        setActiveLink(id);
+      });
+    });
+
+    // Handle scroll - highlight the section whose heading has scrolled past the top
+    function updateActiveSection() {
+      const scrollPos = window.scrollY + 80; // offset for sticky nav
+      const firstSection = sections[0];
+
+      // Clear active state if above first section
+      if (firstSection && scrollPos < firstSection.offsetTop) {
+        navLinks.forEach(link => link.classList.remove('active'));
+        return;
+      }
+
+      // Find the last section that has scrolled past the top
+      let currentSection = null;
+      sections.forEach(section => {
+        if (section.offsetTop <= scrollPos) {
+          currentSection = section;
+        }
+      });
+
+      if (currentSection) {
+        setActiveLink(currentSection.id);
+      }
+    }
+
+    window.addEventListener('scroll', updateActiveSection, { passive: true });
+    updateActiveSection(); // run on load
+  </script>
   </body>
 </html>
